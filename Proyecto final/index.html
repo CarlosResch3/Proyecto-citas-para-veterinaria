@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de citas veterinarias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar nueva cita</h1>
+        <form id="appointment-form">
+            <label for="pet-name">Nombre de la mascota:</label>
+            <input type="text" id="pet-name" name="petName" required>
+            <label for="pet-type">Tipo de mascota:</label>
+            <select name="petType" id="pet-type" required>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="owner-name">Nombre del dueño:</label>
+            <input type="text" id="owner-name" name="ownerName" required>
+            <label for="appointment-reason">Motivo de la cita:</label>
+            <textarea name="appointmentReason" id="appointment-reason" cols="30" rows="10" required></textarea>
+        <label for="appointment-date">Fecha de la cita:</label>
+        <input type="date" id="appointment-date" name="appointmentDate" required>
+        <button type="submit">Registrar cita</button>
+        </form>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
